@@ -39,4 +39,19 @@ class MovieViewModel {
     func cellForRowAt (indexPath: IndexPath) -> Movie {
         return popularMovies[indexPath.row]
     }
+    
+    func getMovieDetail(id: Int, completion: @escaping (_:MovieDetail) -> ()) {
+        
+        apiService.getMovieDetail(id: id, completion: { (result) in
+            
+            switch result {
+            case .success(let movie):
+                completion(movie)
+            case .failure(let error):
+                // Something is wrong with the JSON file or the model
+                print("Error processing json data: \(error)")
+            }
+        })
+    }
+    
 }

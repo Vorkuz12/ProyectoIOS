@@ -21,13 +21,25 @@ class MovieViewController: UIViewController {
     private func loadPopularMoviesData() {
         viewModel.fetchPopularMoviesData { [weak self] in
             self?.tableView.dataSource = self
+            self?.tableView.delegate = self
             self?.tableView.reloadData()
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = self.tableView.indexPathForSelectedRow{
+            let selected = self.viewModel.cellForRowAt(indexPath: indexPath)
+            
+            if let vc = segue.destination as? MovieDetailViewController {
+                vc.movieId = selected.id
+            }
+        }
+       
     }
 }
 
 // MARK: - TableView
-extension MovieViewController: UITableViewDataSource {
+extension MovieViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection(section: section)
     }
@@ -40,4 +52,8 @@ extension MovieViewController: UITableViewDataSource {
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        self.performSegue(withIdentifier: "DetailSegue", sender: self)
+    }
+
 }

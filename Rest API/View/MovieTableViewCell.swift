@@ -33,7 +33,7 @@ class MovieTableViewCell: UITableViewCell {
         self.movieOverview.text = overview
         
         guard let posterString = poster else {return}
-        urlString = "https://image.tmdb.org/t/p/w300" + posterString
+        urlString = Util.getFullImageUrl(imageUrl: posterString, width: 300)
         
         guard let posterImageURL = URL(string: urlString) else {
             self.moviePoster.image = UIImage(named: "noImageAvailable")
