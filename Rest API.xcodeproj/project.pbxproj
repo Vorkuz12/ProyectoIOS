@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3988A56268528320021BE2D /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A55268528320021BE2D /* MovieDetail.swift */; };
+		D3988A5C268528B10021BE2D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A5B268528B10021BE2D /* Util.swift */; };
+		D3988A64268547F60021BE2D /* MyFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A63268547F60021BE2D /* MyFavoritesViewController.swift */; };
+		D3988A69268549BD0021BE2D /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A68268549BD0021BE2D /* MovieDetailViewController.swift */; };
+		D3988A71268557230021BE2D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A70268557230021BE2D /* Extensions.swift */; };
 		F38FA9F62459C47100599E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38FA9F52459C47100599E54 /* AppDelegate.swift */; };
 		F38FA9F82459C47100599E54 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38FA9F72459C47100599E54 /* MovieViewController.swift */; };
 		F38FA9FB2459C47100599E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F38FA9F92459C47100599E54 /* Main.storyboard */; };
@@ -38,17 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F38FA9F22459C47100599E54 /* Rest API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Rest API.app"; path = "/Users/user198899/Desktop/Proyecto/Rest API/build/Debug-iphoneos/Rest API.app"; sourceTree = "<absolute>"; };
+		D3988A4F2684F6C90021BE2D /* Rest API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rest API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3988A502684F6C90021BE2D /* Rest APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3988A512684F6C90021BE2D /* Rest APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3988A55268528320021BE2D /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		D3988A5B268528B10021BE2D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		D3988A63268547F60021BE2D /* MyFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoritesViewController.swift; sourceTree = "<group>"; };
+		D3988A68268549BD0021BE2D /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		D3988A70268557230021BE2D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F38FA9F52459C47100599E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F38FA9F72459C47100599E54 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		F38FA9FA2459C47100599E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F38FA9FC2459C47300599E54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F38FA9FF2459C47300599E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F38FAA012459C47300599E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F38FAA062459C47300599E54 /* Rest APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Rest APITests.xctest"; path = "/Users/user198899/Desktop/Proyecto/Rest API/build/Debug-iphoneos/Rest APITests.xctest"; sourceTree = "<absolute>"; };
 		F38FAA0A2459C47300599E54 /* Rest_APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest_APITests.swift; sourceTree = "<group>"; };
 		F38FAA0C2459C47300599E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F38FAA112459C47300599E54 /* Rest APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Rest APIUITests.xctest"; path = "/Users/user198899/Desktop/Proyecto/Rest API/build/Debug-iphoneos/Rest APIUITests.xctest"; sourceTree = "<absolute>"; };
 		F38FAA152459C47300599E54 /* Rest_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest_APIUITests.swift; sourceTree = "<group>"; };
 		F38FAA172459C47300599E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F38FAA232459C48700599E54 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -82,18 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3988A5A2685288B0021BE2D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D3988A5B268528B10021BE2D /* Util.swift */,
+				D3988A70268557230021BE2D /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		F38FA9E92459C47100599E54 = {
 			isa = PBXGroup;
 			children = (
 				F38FA9F42459C47100599E54 /* Rest API */,
 				F38FAA092459C47300599E54 /* Rest APITests */,
 				F38FAA142459C47300599E54 /* Rest APIUITests */,
+				D3988A4F2684F6C90021BE2D /* Rest API.app */,
+				D3988A502684F6C90021BE2D /* Rest APITests.xctest */,
+				D3988A512684F6C90021BE2D /* Rest APIUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		F38FA9F42459C47100599E54 /* Rest API */ = {
 			isa = PBXGroup;
 			children = (
+				D3988A5A2685288B0021BE2D /* Utilities */,
 				F38FAA2F2459DCE000599E54 /* Model */,
 				F38FAA2E2459DCD700599E54 /* View */,
 				F38FAA2D2459DCC800599E54 /* ViewModel */,
@@ -137,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				F38FA9F72459C47100599E54 /* MovieViewController.swift */,
+				D3988A63268547F60021BE2D /* MyFavoritesViewController.swift */,
+				D3988A68268549BD0021BE2D /* MovieDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				F38FAA232459C48700599E54 /* Model.swift */,
+				D3988A55268528320021BE2D /* MovieDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,7 +209,7 @@
 			);
 			name = "Rest API";
 			productName = "Rest API";
-			productReference = F38FA9F22459C47100599E54 /* Rest API.app */;
+			productReference = D3988A4F2684F6C90021BE2D /* Rest API.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F38FAA052459C47300599E54 /* Rest APITests */ = {
@@ -201,7 +227,7 @@
 			);
 			name = "Rest APITests";
 			productName = "Rest APITests";
-			productReference = F38FAA062459C47300599E54 /* Rest APITests.xctest */;
+			productReference = D3988A502684F6C90021BE2D /* Rest APITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F38FAA102459C47300599E54 /* Rest APIUITests */ = {
@@ -219,7 +245,7 @@
 			);
 			name = "Rest APIUITests";
 			productName = "Rest APIUITests";
-			productReference = F38FAA112459C47300599E54 /* Rest APIUITests.xctest */;
+			productReference = D3988A512684F6C90021BE2D /* Rest APIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -298,10 +324,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F38FAA242459C48700599E54 /* Model.swift in Sources */,
+				D3988A56268528320021BE2D /* MovieDetail.swift in Sources */,
 				F38FAA282459CB8E00599E54 /* MovieViewModel.swift in Sources */,
+				D3988A5C268528B10021BE2D /* Util.swift in Sources */,
 				F38FAA2A2459D6B600599E54 /* MovieTableViewCell.swift in Sources */,
+				D3988A64268547F60021BE2D /* MyFavoritesViewController.swift in Sources */,
+				D3988A69268549BD0021BE2D /* MovieDetailViewController.swift in Sources */,
 				F38FA9F82459C47100599E54 /* MovieViewController.swift in Sources */,
 				F38FAA262459C68300599E54 /* ApiService.swift in Sources */,
+				D3988A71268557230021BE2D /* Extensions.swift in Sources */,
 				F38FA9F62459C47100599E54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
