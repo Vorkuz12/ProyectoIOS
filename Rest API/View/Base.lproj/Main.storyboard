@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejy-3a-ybz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejy-3a-ybz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -38,6 +38,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qTZ-nt-D2Q"/>
                         <segue destination="yZU-yb-T7R" kind="relationship" relationship="viewControllers" id="Qhb-PN-hdO"/>
+                        <segue destination="vUU-Kk-8hI" kind="relationship" relationship="viewControllers" id="XmA-CN-qIG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOq-9M-Fgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -57,7 +58,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="148" id="qQ7-He-r2T" customClass="MovieTableViewCell" customModule="Rest_API" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="148"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qQ7-He-r2T" id="bko-Xy-U2q">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="148"/>
@@ -192,7 +193,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kB-cx-kHG">
-                                                <rect key="frame" x="13" y="190" width="52.5" height="60"/>
+                                                <rect key="frame" x="13" y="190" width="46.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="jMX-Qn-6n2"/>
                                                 </constraints>
@@ -202,7 +203,7 @@
                                                 <size key="shadowOffset" width="8" height="6"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Y5m-tp-U8J">
-                                                <rect key="frame" x="13" y="263" width="388" height="133"/>
+                                                <rect key="frame" x="13" y="263" width="388" height="129.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sce-P0-tCC">
                                                         <rect key="frame" x="0.0" y="0.0" width="388" height="20.5"/>
@@ -211,13 +212,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer Companies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1el-FH-kks">
-                                                        <rect key="frame" x="0.0" y="33.5" width="388" height="26.5"/>
+                                                        <rect key="frame" x="0.0" y="33.5" width="388" height="23"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" systemColor="systemBlueColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-AJ-c1j">
-                                                        <rect key="frame" x="0.0" y="73" width="388" height="60"/>
+                                                        <rect key="frame" x="0.0" y="69.5" width="388" height="60"/>
                                                         <subviews>
                                                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" distribution="fillEqually" alignment="firstBaseline" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oVu-JS-4Vi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="388" height="60"/>
@@ -283,6 +284,36 @@
             </objects>
             <point key="canvasLocation" x="2546.376811594203" y="-533.03571428571422"/>
         </scene>
+        <!--Near Cinemas-->
+        <scene sceneID="bYj-1R-4OL">
+            <objects>
+                <viewController id="vUU-Kk-8hI" customClass="MapViewController" customModule="Rest_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JzQ-1g-O2v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nxp-FL-272">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LlI-G4-7Hg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LlI-G4-7Hg" firstAttribute="bottom" secondItem="nxp-FL-272" secondAttribute="bottom" id="CI0-zi-ZoX"/>
+                            <constraint firstItem="nxp-FL-272" firstAttribute="leading" secondItem="LlI-G4-7Hg" secondAttribute="leading" id="pSq-Ae-ZW8"/>
+                            <constraint firstItem="LlI-G4-7Hg" firstAttribute="trailing" secondItem="nxp-FL-272" secondAttribute="trailing" id="qXN-6X-n98"/>
+                            <constraint firstItem="nxp-FL-272" firstAttribute="top" secondItem="LlI-G4-7Hg" secondAttribute="top" id="wFe-qx-KCV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Near Cinemas" image="location.fill" catalog="system" id="nki-ue-nCE"/>
+                    <connections>
+                        <outlet property="mapView" destination="nxp-FL-272" id="JOb-qk-S9z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSF-85-cvR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="443"/>
+        </scene>
         <!--My Favorites-->
         <scene sceneID="gD8-ue-HGz">
             <objects>
@@ -302,6 +333,7 @@
     </scenes>
     <resources>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
         <image name="ratedStar" width="250" height="236"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">

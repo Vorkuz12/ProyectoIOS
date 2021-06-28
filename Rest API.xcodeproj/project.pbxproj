@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25F49D41268950CC00D14F94 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F49D40268950CC00D14F94 /* MapViewController.swift */; };
 		D3988A56268528320021BE2D /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A55268528320021BE2D /* MovieDetail.swift */; };
 		D3988A5C268528B10021BE2D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A5B268528B10021BE2D /* Util.swift */; };
 		D3988A64268547F60021BE2D /* MyFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3988A63268547F60021BE2D /* MyFavoritesViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25F49D40268950CC00D14F94 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D3988A4F2684F6C90021BE2D /* Rest API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rest API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3988A502684F6C90021BE2D /* Rest APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3988A512684F6C90021BE2D /* Rest APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rest APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +164,7 @@
 				F38FA9F72459C47100599E54 /* MovieViewController.swift */,
 				D3988A63268547F60021BE2D /* MyFavoritesViewController.swift */,
 				D3988A68268549BD0021BE2D /* MovieDetailViewController.swift */,
+				25F49D40268950CC00D14F94 /* MapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				F38FAA2A2459D6B600599E54 /* MovieTableViewCell.swift in Sources */,
 				D3988A64268547F60021BE2D /* MyFavoritesViewController.swift in Sources */,
 				D3988A69268549BD0021BE2D /* MovieDetailViewController.swift in Sources */,
+				25F49D41268950CC00D14F94 /* MapViewController.swift in Sources */,
 				F38FA9F82459C47100599E54 /* MovieViewController.swift in Sources */,
 				F38FAA262459C68300599E54 /* ApiService.swift in Sources */,
 				D3988A71268557230021BE2D /* Extensions.swift in Sources */,
